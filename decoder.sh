@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 liand=$(7z l sombras.gzip | grep "Name" -A 2 | awk 'NF{print $NF}' | awk 'NR==3')
 7z x sombras.gzip >/dev/null 2>&1
 while true; do 
